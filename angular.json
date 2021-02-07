@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/ng-connection-monitor",
+            "outputPath": "dist/ng-connection-service",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-connection-monitor:build"
+            "browserTarget": "ng-connection-service:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-connection-monitor:build:production"
+              "browserTarget": "ng-connection-service:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-connection-monitor:build"
+            "browserTarget": "ng-connection-service:build"
           }
         },
         "test": {
@@ -114,7 +114,7 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ng-connection-monitor:serve:production"
+              "devServerTarget": "ng-connection-service:serve:production"
             }
           }
         },
@@ -171,5 +171,5 @@
       }
     }
   },
-  "defaultProject": "ng-connection-monitor"
+  "defaultProject": "ng-connection-service"
 }
